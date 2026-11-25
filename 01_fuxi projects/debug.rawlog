@@ -1,0 +1,149 @@
+mkdir: 无法创建目录"outputs": 文件已存在
+mkdir: 无法创建目录"netlist": 文件已存在
+mkdir: 无法创建目录"db": 文件已存在
+mkdir: 无法创建目录"misc": 文件已存在
+mkdir: 无法创建目录"tmp": 文件已存在
+-----------------------------------------------------------------------------
+Fuxi CST Tool Version fx2025.1 linux64 Build 20250819-23:41:09
+Copyright (C) 2017-2025 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+INFO:VERI-1482: Analyzing Verilog file alarm_ctrl.v
+INFO:VERI-1482: Analyzing Verilog file bcd_conv.v
+INFO:VERI-1482: Analyzing Verilog file crc16_modbus.v
+INFO:VERI-1482: Analyzing Verilog file disp_chargen.v
+INFO:VERI-1482: Analyzing Verilog file font8x8.v
+INFO:VERI-1482: Analyzing Verilog file iic_master.v
+INFO:VERI-1482: Analyzing Verilog file key_scan.v
+INFO:VERI-1482: Analyzing Verilog file oled_sh1107.v
+INFO:VERI-1482: Analyzing Verilog file oled_ssd1306.v
+INFO:VERI-1482: Analyzing Verilog file rotary_enc.v
+INFO:VERI-1482: Analyzing Verilog file seg7_595.v
+INFO:VERI-1482: Analyzing Verilog file tof1_parser.v
+WARNING:VERI-1875: tof1_parser.v:31: identifier idx is used before its declaration
+INFO:VERI-1482: Analyzing Verilog file top_tof.v
+INFO:VERI-1482: Analyzing Verilog file uart_rx.v
+INFO:VERI-1482: Analyzing Verilog file uart_tx.v
+INFO:VERI-1482: Analyzing Verilog file ui_ctrl.v
+INFO:VERI-1482: Analyzing Verilog file ws2812_drv.v
+WARNING:VERI-1927: top_tof.v:146: port key_hold remains unconnected for this instance
+WARNING:VERI-1927: top_tof.v:663: port rd_ch remains unconnected for this instance
+INFO:VERI-1018: top_tof.v:53: compiling module top_tof
+INFO:VERI-1018: key_scan.v:12: compiling module key_scan
+INFO:VERI-1018: rotary_enc.v:11: compiling module rotary_enc
+INFO:VERI-1018: ui_ctrl.v:19: compiling module ui_ctrl
+INFO:VERI-1018: uart_rx.v:12: compiling module uart_rx
+INFO:VERI-1018: tof1_parser.v:12: compiling module tof1_parser
+INFO:VERI-1018: crc16_modbus.v:10: compiling module crc16_modbus
+INFO:VERI-1018: uart_tx.v:11: compiling module uart_tx
+INFO:VERI-1018: bcd_conv.v:10: compiling module bcd_conv
+INFO:VERI-1018: font8x8.v:16: compiling module font8x8
+INFO:VERI-1018: disp_chargen.v:16: compiling module disp_chargen
+INFO:VERI-1018: oled_sh1107.v:39: compiling module oled_sh1107
+WARNING:VERI-1209: oled_sh1107.v:292: expression size 5 truncated to fit in target size 4
+INFO:VERI-1018: oled_ssd1306.v:15: compiling module ssd1306_128x64
+INFO:VERI-1018: iic_master.v:12: compiling module i2c_master
+INFO:VERI-1018: alarm_ctrl.v:27: compiling module alarm_ctrl
+INFO:VERI-1018: ws2812_drv.v:14: compiling module ws2812_drv
+INFO:VERI-1018: seg7_595.v:18: compiling module seg7_595
+WARNING:VDB-1013: top_tof.v:146: input port key_hold[4] is not connected on this instance
+WARNING:VDB-1013: top_tof.v:663: input port rd_ch[7] is not connected on this instance
+INFO:CMD-2015: optimize: optimizing netlist top_tof()
+INFO:CMD-2016: netlist top_tof() had 45 operator optimizations
+INFO:CMD-2018: timing before optimization : 6 levels
+INFO:CMD-2019: timing after optimization : 6 levels
+INFO:CMD-2015: optimize: optimizing netlist key_scan()
+INFO:CMD-2018: timing before optimization : 3 levels
+INFO:CMD-2019: timing after optimization : 3 levels
+INFO:CMD-2015: optimize: optimizing netlist rotary_enc()
+INFO:CMD-2018: timing before optimization : 2 levels
+INFO:CMD-2019: timing after optimization : 2 levels
+INFO:CMD-2015: optimize: optimizing netlist ui_ctrl()
+INFO:CMD-2016: netlist ui_ctrl() had 25 operator optimizations
+INFO:CMD-2018: timing before optimization : 12 levels
+INFO:CMD-2019: timing after optimization : 12 levels
+INFO:CMD-2015: optimize: optimizing netlist uart_rx()
+INFO:CMD-2016: netlist uart_rx() had 20 operator optimizations
+INFO:CMD-2018: timing before optimization : 4 levels
+INFO:CMD-2019: timing after optimization : 4 levels
+INFO:CMD-2015: optimize: optimizing netlist tof1_parser()
+INFO:CMD-2016: netlist tof1_parser() had 171 operator optimizations
+INFO:CMD-2018: timing before optimization : 4 levels
+INFO:CMD-2019: timing after optimization : 3 levels
+INFO:CMD-2015: optimize: optimizing netlist crc16_modbus()
+INFO:CMD-2018: timing before optimization : 11 levels
+INFO:CMD-2019: timing after optimization : 11 levels
+INFO:CMD-2015: optimize: optimizing netlist uart_tx()
+INFO:CMD-2018: timing before optimization : 4 levels
+INFO:CMD-2019: timing after optimization : 4 levels
+INFO:CMD-2015: optimize: optimizing netlist bcd_conv()
+INFO:CMD-2018: timing before optimization : 5 levels
+INFO:CMD-2019: timing after optimization : 5 levels
+INFO:CMD-2015: optimize: optimizing netlist font8x8()
+INFO:CMD-2016: netlist font8x8() had 1 operator optimizations
+INFO:CMD-2018: timing before optimization : 2 levels
+INFO:CMD-2019: timing after optimization : 2 levels
+INFO:CMD-2015: optimize: optimizing netlist disp_chargen()
+INFO:CMD-2016: netlist disp_chargen() had 3 operator optimizations
+INFO:CMD-2018: timing before optimization : 6 levels
+INFO:CMD-2019: timing after optimization : 6 levels
+INFO:CMD-2015: optimize: optimizing netlist oled_sh1107()
+INFO:CMD-2016: netlist oled_sh1107() had 22 operator optimizations
+INFO:CMD-2018: timing before optimization : 4 levels
+INFO:CMD-2019: timing after optimization : 4 levels
+INFO:CMD-2015: optimize: optimizing netlist ssd1306_128x64()
+INFO:CMD-2016: netlist ssd1306_128x64() had 52 operator optimizations
+INFO:CMD-2018: timing before optimization : 5 levels
+INFO:CMD-2019: timing after optimization : 5 levels
+INFO:CMD-2015: optimize: optimizing netlist i2c_master()
+INFO:CMD-2016: netlist i2c_master() had 7 operator optimizations
+INFO:CMD-2018: timing before optimization : 3 levels
+INFO:CMD-2019: timing after optimization : 3 levels
+INFO:CMD-2015: optimize: optimizing netlist alarm_ctrl()
+INFO:CMD-2016: netlist alarm_ctrl() had 1 operator optimizations
+INFO:CMD-2018: timing before optimization : 7 levels
+INFO:CMD-2019: timing after optimization : 7 levels
+INFO:CMD-2015: optimize: optimizing netlist ws2812_drv()
+INFO:CMD-2018: timing before optimization : 3 levels
+INFO:CMD-2019: timing after optimization : 3 levels
+INFO:CMD-2015: optimize: optimizing netlist seg7_595()
+INFO:CMD-2016: netlist seg7_595() had 13 operator optimizations
+INFO:CMD-2018: timing before optimization : 5 levels
+INFO:CMD-2019: timing after optimization : 5 levels
+INFO:CMD-2015: optimize: optimizing netlist top_tof()
+INFO:CMD-2015: optimize: optimizing netlist key_scan()
+INFO:CMD-2015: optimize: optimizing netlist rotary_enc()
+INFO:CMD-2015: optimize: optimizing netlist ui_ctrl()
+INFO:CMD-2015: optimize: optimizing netlist uart_rx()
+INFO:CMD-2015: optimize: optimizing netlist tof1_parser()
+INFO:CMD-2015: optimize: optimizing netlist crc16_modbus()
+INFO:CMD-2015: optimize: optimizing netlist uart_tx()
+INFO:CMD-2015: optimize: optimizing netlist bcd_conv()
+INFO:CMD-2015: optimize: optimizing netlist font8x8()
+INFO:CMD-2015: optimize: optimizing netlist disp_chargen()
+INFO:CMD-2015: optimize: optimizing netlist oled_sh1107()
+INFO:CMD-2015: optimize: optimizing netlist ssd1306_128x64()
+INFO:CMD-2015: optimize: optimizing netlist i2c_master()
+INFO:CMD-2015: optimize: optimizing netlist alarm_ctrl()
+INFO:CMD-2015: optimize: optimizing netlist ws2812_drv()
+INFO:CMD-2015: optimize: optimizing netlist seg7_595()
+INFO:10001:Reading technology library file /usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/data/lib/agate_lib_hr3.v...
+INFO:10101:Set top-level entity name: top_tof.
+INFO:10002:Reading AOC file outputs/top_tof_ast.aoc...
+INFO:10001:Reading technology library file /usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/data/lib/generic.v...
+INFO:10001:Reading technology library file /usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/data/lib/cfe_map_lib.v...
+INFO:10205:Start advanced logic optimization.
+INFO:10206:Finish advanced logic optimization.
+INFO:10304:magic: 110.2600 second(s), total 114.7900 second(s). Peak memory 286 MB.
+INFO:10204:Generating synthesis design report...
+INFO:10004:Output AMV file: outputs/top_tof.amv.
+INFO:10005:Output AMA file: outputs/top_tof.ama.
+Fuxi fx2025.1 linux64 CST was successful!
+6 warning(s), 0 error(s).
+CPU Time: 116.260 seconds, Peak Memory: 300 MB
+-----------------------------------------------------------------------------
+Fuxi agv2aoc Tool Version fx2025.1 linux64 Build 20250819-23:37:11
+Copyright (C) 2017-2025 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+Fuxi fx2025.1 linux64 agv2aoc was successful!
+0 warning(s), 0 error(s).
+CPU Time: 0.178 seconds, Peak Memory: 29 MB

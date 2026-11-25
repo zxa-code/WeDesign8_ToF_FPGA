@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<report title="Hercules Micro Design Report" version="1.0">
+
+  <Synthesis>
+    <Summary>
+      <Attr name="Running status" value="Successful"/>
+      <Attr name="Time stamp" value="Sat Nov 14 22:09:10 2026&#xA;"/>
+      <Attr name="Fuxi version" value="fx2025.1 linux64"/>
+      <Attr name="Device name" value="HR03PN0U81C7"/>
+      <Attr name="Top module name" value="top_tof"/>
+      <Attr name="Input design file" value="alarm_ctrl.v"/>
+      <Attr name="Output design file" value="outputs/top_tof.amv"/>
+      <Attr name="Output annotation file" value="outputs/top_tof.ama"/>
+    </Summary>
+    <Resource>
+      <Attr name="Total LUT(s)" total="3072" value="3086">
+        <Attr name="Total LUT4(s)" total="2048" value="2533"/>
+        <Attr name="Total LUT4C(s)" total="1024" value="553"/>
+      </Attr>
+      <Attr name="Total REG(s)" total="2048" value="1164"/>
+      <Attr name="Total I/O pins" total="66" value="37"/>
+      <Attr name="Total EMB(s)" total="16" value="0"/>
+      <Attr name="Total PLL(s)" total="2" value="0"/>
+    </Resource>
+    <Message>
+      <Attr name="Warning" total="0" value="6"/>
+      <Attr name="Error" total="0" value="0"/>
+    </Message>
+  </Synthesis>
+
+  <Placement>
+    <Summary>
+      <Attr name="Running status" total="" value="Successful"/>
+      <Attr name="Time stamp" total="" value="Sat Nov 14 22:11:14 2026"/>
+      <Attr name="Fuxi version" total="" value="fx2025.1 linux64"/>
+      <Attr name="Device name" total="" value="HR03PN0U81C7"/>
+      <Attr name="Top module name" total="" value="top_tof"/>
+      <Attr name="Input design file" total="" value="outputs/top_tof.amv"/>
+      <Attr name="Input aoc constraint file" total="" value="top_tof.aoc"/>
+      <Attr name="Output design file" total="" value="outputs/top_tof.apv"/>
+      <Attr name="Output annotation file" total="" value="outputs/top_tof.apx"/>
+      <Attr name="Maximum fan-out node" total="" value="io_clk_inst"/>
+      <Attr name="Highest non-global fan-out signal" total="" value="ii1185"/>
+    </Summary>
+    <Resource>
+      <Attr name="Total logic elements" total="3072" value="3020">
+        <Attr name="combinational with no register" total="" value="1895"/>
+        <Attr name="register only" total="" value="11"/>
+        <Attr name="combinational with a register" total="" value="1125"/>
+      </Attr>
+      <Attr name="Logic elements by mode" total="" value="">
+        <Attr name="normal mode" total="" value="2445"/>
+        <Attr name="lut4 number" total="" value="2445"/>
+        <Attr name="arithmetic carry chain mode" total="" value="575"/>
+      </Attr>
+      <Attr name="Total registers" total="2246" value="1136">
+        <Attr name="dedicated logic registers" total="2048" value="1136"/>
+        <Attr name="I/O registers" total="198" value="0"/>
+      </Attr>
+      <Attr name="I/O pins" total="66" value="37">
+        <Attr name="clock pins" total="8" value="1"/>
+      </Attr>
+      <Attr name="Total PLBs(partially or completely used)" total="256" value="256"/>
+      <Attr name="Maximum fan-out" total="" value="1136"/>
+      <Attr name="Highest non-global fan-out" total="" value="1088"/>
+      <Attr name="Total fan-out" total="" value="14570"/>
+      <Attr name="Average fan-out" total="" value="3.45"/>
+      <Attr name="Total embedded memory blocks" total="16" value="0"/>
+    </Resource>
+    <BankSummary>
+      <Attr name="1" total="66" value="51"/>
+    </BankSummary>
+    <QoRSummary>
+      <Attr name="Global placer net length" total="" value="4.98"/>
+      <Attr name="Detail placer net length" total="" value="7.58"/>
+    </QoRSummary>
+    <Message>
+      <Attr name="Warning" total="" value="0"/>
+      <Attr name="Error" total="" value="0"/>
+    </Message>
+  </Placement>
+
+  <Routing>
+    <Summary>
+      <Attr name="Running status" total="" value="Successful"/>
+      <Attr name="Time stamp" total="" value="Sat Nov 14 22:12:51 2026"/>
+      <Attr name="Fuxi version" total="" value="fx2025.1 linux64"/>
+      <Attr name="Device name" total="" value="HR03PN0U81C7"/>
+      <Attr name="Top module name" total="" value="top_tof"/>
+      <Attr name="Input design file" total="" value="outputs/top_tof.apv"/>
+      <Attr name="Input annotation file" total="" value="top_tof.apx"/>
+      <Attr name="Output annotation file" total="" value="outputs/top_tof.apa"/>
+      <Attr name="Output design file" total="" value="outputs/top_tof.arv"/>
+    </Summary>
+    <Resource>
+      <Attr name="Total nets" total="" value="6758"/>
+      <Attr name="Failed nets" total="" value="0"/>
+      <Attr name="Interconnect Resources" total="" value="73.82%"/>
+      <Attr name="Total Elapsed Time" total="" value="94 seconds"/>
+      <Attr name="Peak Mem" total="" value="109 MB"/>
+      <Attr name="Iteration Num" total="" value="30"/>
+      <Attr name="Average Fanout" total="" value="2.457680"/>
+    </Resource>
+    <Message>
+      <Attr name="Warning" total="" value="0"/>
+      <Attr name="Error" total="" value="0"/>
+    </Message>
+  </Routing>
+
+</report>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AgateProject version="3.2">
+    <name>top_tof</name>
+    <device>HR03PN0U81C7</device>
+    <topModule>top_tof</topModule>
+    <MonitorSignal>Default|Default</MonitorSignal>
+    <files>
+        <file>$(PRJ_DIR)/alarm_ctrl.v</file>
+        <file>$(PRJ_DIR)/bcd_conv.v</file>
+        <file>$(PRJ_DIR)/crc16_modbus.v</file>
+        <file>$(PRJ_DIR)/disp_chargen.v</file>
+        <file>$(PRJ_DIR)/font8x8.v</file>
+        <file>$(PRJ_DIR)/iic_master.v</file>
+        <file>$(PRJ_DIR)/key_scan.v</file>
+        <file>$(PRJ_DIR)/oled_sh1107.v</file>
+        <file>$(PRJ_DIR)/oled_ssd1306.v</file>
+        <file>$(PRJ_DIR)/rotary_enc.v</file>
+        <file>$(PRJ_DIR)/seg7_595.v</file>
+        <file>$(PRJ_DIR)/tof1_parser.v</file>
+        <file>$(PRJ_DIR)/top_tof.v</file>
+        <file>$(PRJ_DIR)/uart_rx.v</file>
+        <file>$(PRJ_DIR)/uart_tx.v</file>
+        <file>$(PRJ_DIR)/ui_ctrl.v</file>
+        <file>$(PRJ_DIR)/ws2812_drv.v</file>
+        <file>$(PRJ_DIR)/top_tof.aoc</file>
+    </files>
+</AgateProject>

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ProPrj_基于FPGA的ToF激光测距数字系统_2026-11-10-import-fps") (type "KiCad") (uri "${KIPRJMOD}/ProPrj_基于FPGA的ToF激光测距数字系统_2026-11-10-import-fps.pretty") (options "kicad_import_cache=1") (descr ""))
+)

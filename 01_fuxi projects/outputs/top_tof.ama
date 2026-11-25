@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<annotation version="1.0">
+
+  <critical_path>
+    <path path_name="u_oled_rd_col_reg[1]">
+      <src_node block_name="u_oled_rd_col_reg[1]" output_port_name="qx"/>
+      <middle_node block_name="ii2740" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii2744" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii2931" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3270" input_port_name="f2" output_port_name="dx"/>
+      <middle_node block_name="ii3274" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3279" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3280" input_port_name="f0" output_port_name="dx"/>
+      <middle_node block_name="ii3380" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3493" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3496" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3502" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3504" input_port_name="f1" output_port_name="dx"/>
+      <middle_node block_name="ii3521" input_port_name="f3" output_port_name="dx"/>
+      <middle_node block_name="ii3548" input_port_name="f2" output_port_name="dx"/>
+      <middle_node block_name="ii3584" input_port_name="f2" output_port_name="dx"/>
+      <dst_node block_name="u_i2c_oled_pix_byte_r_reg[0]" input_port_name="di"/>
+    </path>
+  </critical_path>
+
+</annotation>

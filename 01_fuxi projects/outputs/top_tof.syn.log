@@ -1,0 +1,921 @@
+Info: Pushed output mux into adder: add_1226
+Info: Pushed output mux into adder: add_272
+Info: Pushed output mux into adder: add_484
+Info: Pushed output mux into adder: u_i2c_oled|add_188
+Info: Pushed output mux into adder: u_oled|add_30
+Info: Pushed output mux into adder: add_961
+Info: Pushed output mux into adder: u_oled|add_407
+Info: Pushed output mux into adder: u_tof_tx|add_5
+Info: Pushed output mux into adder: u_pc_tx|add_5
+Info: Pushed output mux into adder: u_key_scan|add_17
+Info: Pushed output mux into adder: u_alarm|add_83
+Info: Pushed output mux into adder: u_ws2812|add_15
+Info: Pushed output mux into adder: u_alarm|add_304
+Info: Pushed output mux into adder: u_alarm|add_27
+Info: Pushed output mux into adder: u_alarm|add_178
+Info: Pushed output mux into adder: u_alarm|add_330
+Info: Pushed output mux into adder: u_alarm|add_47
+Info: Pushed output mux into adder: u_seg7|add_81
+Info: Pushed output mux into adder: u_oled|add_563
+Info: Pushed output mux into adder: u_alarm|add_71
+Info: Pushed output mux into adder: u_ws2812|add_107
+Info: Pushed output mux into adder: u_oled|add_318
+Info: Pushed output mux into adder: u_bcd|add_119
+Info: Pushed output mux into adder: u_i2c_oled|u_i2c|add_18
+Info: Pushed output mux into adder: u_ui|add_35
+Info: Pushed output mux into adder: u_pc_tx|add_77
+Info: Pushed output mux into adder: u_ui|add_37
+Info: Pushed output mux into adder: u_oled|add_569
+Info: Pushed output mux into adder: u_bcd|add_22
+Info: Pushed output mux into adder: u_bcd|add_28
+Info: Pushed output mux into adder: u_ws2812|add_128
+Info: Pushed output mux into adder: u_tof_tx|add_77
+Info: Pushed output mux into adder: u_ui|add_39
+Info: Pushed output mux into adder: u_bcd|add_4
+Info: Pushed output mux into adder: u_bcd|add_10
+Info: Pushed output mux into adder: u_bcd|add_16
+Info: Pushed output mux into adder: u_i2c_oled|u_i2c|add_26
+Info: Pushed output mux into adder: u_ui|add_474
+Info: Pushed output mux into adder: u_i2c_oled|add_276
+Info: Pushed output mux into adder: u_ui|add_469
+Info: Pushed output mux into adder: u_tof_rx|add_57
+Info: Pushed output mux into adder: u_alarm|add_67
+Info: Pushed output mux into adder: u_rotary_enc|add_57
+Info: Pushed output mux into adder: u_ui|add_342
+Info: Pushed output mux into adder: u_ui|add_346
+Info: Pushed output mux into adder: u_rotary_enc|add_55
+Info: Pushed output mux into adder: u_oled|add_554
+Info: Pushed output mux into adder: u_ui|add_368
+Info: Pushed output mux into adder: u_ui|add_372
+
+
+Isyn command line: 
+/usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/bin/magic -c "*setlib /usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/data/lib/magic_lib_jinshan.v; *r outputs/top_tof_pre_magic.v; *magic; *mload -dl; *w outputs/top_tof_post_magic.v"
+
+[ alias q quit ]...
+[ alias h history ]...
+[ *setlib /home/sjang/magic/agalib.v ]...
+Extra_FileCheck():  File "/home/sjang/magic/agalib.v" does not exist.
+ABC command line: "*setlib /usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/data/lib/magic_lib_jinshan.v; *r outputs/top_tof_pre_magic.v; *magic; *mload -dl; *w outputs/top_tof_post_magic.v".
+
+Setting "/usr/local/Fuxi2025.1.0CD_linux64_20250819/2025-08-19-linux64-rel-174/data/lib/magic_lib_jinshan.v" as the current library.
++--------------------------------------------------------+
+|                     Magic 01-14-2014                   |
+|               Agate Synthesis Technology               |
+|        Copyright (c) Agate Logic Inc., 2006-2014       |
++--------------------------------------------------------+
+
+@INFO: Spec=top_tof_pre_magic.v, Design=top_tof, Compiled Sep  9 2014 10:38:55, area_mode=0, quick=0, scorr=0, mode=0, verbose=0... =====
+[ *plut ]...
+# The area/delay of k-variable LUTs:
+# k    area     delay
+1      1.00   1000.00
+2      1.00   1000.00
+3      1.00   1000.00
+4      1.00   1000.00
+[ *st; *pss ia; ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =  12342  edge =  24684  0.00%  lev = 63 
+[ *logic; *st; *pss ia; ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =  12342  edge =  24684  0.00%  lev = 63 
+[ *if; *pss; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =  18259  edge =  11144  0.00%  lev = 22 
+LUT =  3425  1+ =  3425  2+ =  3425   0=0 1=0 2=871 3=814 4=1740 Ave = 3.25  Area = 3425  Delay = 22000
+top_tof, Lv=22, A=3425.00, LT=3425, MX=4, D=22.00, DD=22.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=22, A=3623.00, LT=3644, MX=4, D=22.00, DD=22.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.8, 0.8) <-bst(d,a)
+@INFO: Copying first mapped netlist...
+$INFO: first mapped network (not legalized)....
+CO drivers: Pos = 1247 (CI = 777).  Neg = 542 (CI = 38).  Both = 13 (CI = 8).
+Special input stats: 1x = 549  2x = 1  8x = 1   (PI = 150  BoxOut = 4  Const = 8  Buffer = 38)
+Legalization: added 154 PI buffers and duplicated 13 nodes with high fanouts (total = 167).
+$INFO: legalized....
+[ *pss; *mps ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   3644  edge =  11121  0.00%  lev = 22 
+LUT =  3644  1+ =  3623  2+ =  3388   0=21 1=235 2=899 3=868 4=1621 Ave = 3.05  Area = 3623  Delay = 22000
+top_tof, Lv=22, A=3623.00, LT=3644, MX=4, D=22.00, DD=22.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=22, A=3623.00, LT=3644, MX=4, D=22.00, DD=22.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 0.8) 
+$INFO: strash it again....
+[ *st; *pss; ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   9066  edge =  18132  0.00%  lev = 59 
+[ *fraig; *pss; ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8316  edge =  16632  0.00%  lev = 59 
+[ *sw -lv; *pss -i ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8316  edge =  16632  0.00%  lev = 59 
+INSTANCE STATISTICS for "top_tof" (box count = 38):
+ 15 :                      CS_REG_PRIM     49    I=   5  O=   1  N=      5  A=     14  lib  seq    
+ 17 :                     CS_REGA_PRIM   1115    I=   5  O=   1  N=      5  A=     14  lib  seq    
+ 43 :             top_tof_ipc_adder_10      1    I=  21  O=  11  N=     60  A=     93      comb box
+ 44 :             top_tof_ipc_adder_11      3    I=  23  O=  12  N=     66  A=    102      comb box
+ 45 :             top_tof_ipc_adder_12      2    I=  25  O=  13  N=     72  A=    111      comb box
+ 46 :             top_tof_ipc_adder_14      2    I=  29  O=  15  N=     84  A=    129      comb box
+ 47 :             top_tof_ipc_adder_16      9    I=  33  O=  17  N=     96  A=    147      comb box
+ 48 :             top_tof_ipc_adder_17      3    I=  35  O=  18  N=    102  A=    156      comb box
+ 49 :             top_tof_ipc_adder_20      2    I=  41  O=  21  N=    120  A=    183      comb box
+ 50 :             top_tof_ipc_adder_21      1    I=  43  O=  22  N=    126  A=    192      comb box
+ 51 :             top_tof_ipc_adder_22      1    I=  45  O=  23  N=    132  A=    201      comb box
+ 52 :             top_tof_ipc_adder_24      5    I=  49  O=  25  N=    144  A=    219      comb box
+ 53 :              top_tof_ipc_adder_6      4    I=  13  O=   7  N=     36  A=     57      comb box
+ 54 :              top_tof_ipc_adder_8      3    I=  17  O=   9  N=     48  A=     75      comb box
+ 55 :              top_tof_ipc_adder_9      2    I=  19  O=  10  N=     54  A=     84      comb box
+$INFO: mapped after fraig, options=....
+[ *if ; *pss; *mps ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   9508  edge =   9797  0.00%  lev = 21 
+LUT =  3068  1+ =  3068  2+ =  3068   0=0 1=0 2=883 3=709 4=1476 Ave = 3.19  Area = 3068  Delay = 21000
+top_tof, Lv=21, A=3068.00, LT=3068, MX=4, D=21.00, DD=21.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=21, A=3359.00, LT=3376, MX=4, D=21.00, DD=21.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.3, 1.1) 
+
+@@@@@@@@@@  1 1 1 1 @@@@@@@@@@
+[ *bidec; *dch -f; *if ; *mps -b; *pss ]...
+top_tof, Lv=18, A=3039.00, LT=3039, MX=4, D=18.00, DD=18.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=18, A=3331.00, LT=3348, MX=4, D=18.00, DD=18.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.1, 2.1) <-bst(d,a)
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8907  edge =   9600  0.00%  lev = 18 
+LUT =  3039  1+ =  3039  2+ =  3039   0=0 1=0 2=865 3=826 4=1348 Ave = 3.16  Area = 3039  Delay = 18000
+[          *if ; *mps -b ]...
+top_tof, Lv=18, A=2985.00, LT=2985, MX=4, D=18.00, DD=18.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=18, A=3277.00, LT=3294, MX=4, D=18.00, DD=18.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.1, 2.3) <-bst(d,a)
+[ *dch -f; *if ; *mps -b ]...
+top_tof, Lv=17, A=3017.00, LT=3017, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=17, A=3309.00, LT=3326, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.1, 3.3) <-bst(d)
+[ *dch -f; *if ; *mps -b ]...
+top_tof, Lv=17, A=2972.00, LT=2972, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=17, A=3264.00, LT=3281, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.0, 4.3) <-bst(d,a)
+[ *dch -f; *if ; *mps -b ]...
+top_tof, Lv=17, A=2974.00, LT=2974, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=17, A=3266.00, LT=3283, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.0, 5.3) 
+[ *bidec; *dch -f; *if ; *mps -b ]...
+top_tof, Lv=17, A=2979.00, LT=2979, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=17, A=3271.00, LT=3288, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.2, 6.6) 
+[ *bidec; *dch -f; *if ; *mps -b ]...
+top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.1, 7.7) <-bst(d,a)
+<*C>top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< C>top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< A>top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< D>top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ C]top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ A]top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ D]top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ *mps ]...
+top_tof, Lv=17, A=2946.00, LT=2946, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=17, A=3238.00, LT=3255, MX=4, D=17.00, DD=17.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 7.7) 
+
+@@@@@@@@@@  2 2 2 2 @@@@@@@@@@
+[ *bidec;  *dch -f; *if ; *mps -b ]...
+top_tof, Lv=16, A=2921.00, LT=2921, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3213.00, LT=3230, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 8.6) <-bst(d,a)
+[ *bidec;  *dch -f; *if ; *mps -b ]...
+top_tof, Lv=16, A=2949.00, LT=2949, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3241.00, LT=3258, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 9.5) 
+[ *shrink; *dch -f; *if  -e -C 32; *mps -b ]...
+top_tof, Lv=16, A=2872.00, LT=2872, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3160.00, LT=3177, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.8, 10.4) <-bst(d,a)
+[ *shrink; *dch -f; *if  -e -C 32; *mps -b ]...
+top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 11.3) <-bst(d,a)
+<*C>top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< C>top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< A>top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< D>top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ C]top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ A]top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ D]top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ *mps ]...
+top_tof, Lv=16, A=2867.00, LT=2867, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 11.3) 
+[ *logic; *pss; *mps ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2938  edge =   9963  0.00%  lev = 16 
+LUT =  2938  1+ =  2936  2+ =  2867   0=2 1=69 2=512 3=550 4=1805 Ave = 3.39  Area = 2936  Delay = 16000
+top_tof, Lv=16, A=2936.00, LT=2938, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 11.3) 
+[ *sw -lv; *mps -b ]...
+top_tof, Lv=16, A=2936.00, LT=2938, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3156.00, LT=3173, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 11.3) 
+
+@@@@@@@@@@  3 3 3 3 @@@@@@@@@@
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps ]...
+The network has 116 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2907  edge =   9763  0.00%  lev = 16 
+LUT =  2907  1+ =  2905  2+ =  2834   0=2 1=71 2=523 3=598 4=1713 Ave = 3.36  Area = 2905  Delay = 16000
+top_tof, Lv=16, A=2905.00, LT=2907, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3125.00, LT=3142, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(2.0, 13.3) 
+[ *sw -lv; *mps ]...
+top_tof, Lv=16, A=2905.00, LT=2907, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3125.00, LT=3142, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 13.3) 
+[ *st; *if ; *mps -b ]...
+top_tof, Lv=16, A=2846.00, LT=2846, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3136.00, LT=3153, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.1, 13.4) <-bst(d,a)
+[ *bidec; *dch -f; *if ; *mps -b ]...
+top_tof, Lv=16, A=2886.00, LT=2886, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3177.00, LT=3194, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.0, 14.4) 
+[ *bidec; *dch -f; *if ; *mps -b ]...
+top_tof, Lv=16, A=2868.00, LT=2868, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3159.00, LT=3176, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 15.3) 
+[ *logic; *mps; *mfs; *mps -b ]...
+top_tof, Lv=16, A=2937.00, LT=2939, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3159.00, LT=3176, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 15.4) 
+The network has 80 nodes changed by "*mfs".
+top_tof, Lv=17, A=2909.00, LT=2911, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3131.00, LT=3148, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(5.7, 21.1) <-bst(a)
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 1 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2911  edge =   9015  0.00%  lev = 17 
+LUT =  2911  1+ =  2909  2+ =  2839   0=2 1=70 2=824 3=763 4=1252 Ave = 3.10  Area = 2909  Delay = 17000
+top_tof, Lv=17, A=2909.00, LT=2911, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3131.00, LT=3148, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(2.0, 23.1) 
+<*C>top_tof, Lv=17, A=2909.00, LT=2911, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=17, A=3131.00, LT=3148, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=17, A=2909.00, LT=2911, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=17, A=3131.00, LT=3148, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2846.00, LT=2846, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< D>top_tof, Lv=16, A=3136.00, LT=3153, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-DELAY-ntk loaded...
+[ C]top_tof, Lv=16, A=2846.00, LT=2846, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ C]top_tof, Lv=16, A=3136.00, LT=3153, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=17, A=2909.00, LT=2911, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=17, A=3131.00, LT=3148, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*D]top_tof, Lv=16, A=2846.00, LT=2846, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ D]top_tof, Lv=16, A=3136.00, LT=3153, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+
+@@@@@@@@@@  4 4 4 4 @@@@@@@@@@
+[ *logic; *pss; *mps ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2917  edge =   9510  0.00%  lev = 16 
+LUT =  2917  1+ =  2915  2+ =  2846   0=2 1=69 2=628 3=687 4=1531 Ave = 3.26  Area = 2915  Delay = 16000
+top_tof, Lv=16, A=2915.00, LT=2917, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3136.00, LT=3153, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 23.1) 
+[ *sw -lv; *mps -b ]...
+top_tof, Lv=16, A=2915.00, LT=2917, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3136.00, LT=3153, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 23.1) 
+[ *st; *if ; *mps -b ]...
+top_tof, Lv=16, A=2838.00, LT=2838, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3128.00, LT=3145, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.1, 23.3) <-bst(d,a)
+[ *logic; *mps; *mfs; *mps -b ]...
+top_tof, Lv=16, A=2907.00, LT=2909, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3128.00, LT=3145, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 23.3) 
+The network has 64 nodes changed by "*mfs".
+top_tof, Lv=17, A=2879.00, LT=2881, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3100.00, LT=3117, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(6.7, 30.0) <-bst(a)
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 5 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2876  edge =   9333  0.00%  lev = 17 
+LUT =  2876  1+ =  2874  2+ =  2803   0=2 1=71 2=645 3=660 4=1498 Ave = 3.25  Area = 2874  Delay = 17000
+top_tof, Lv=17, A=2874.00, LT=2876, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3095.00, LT=3112, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(2.6, 32.5) <-bst(a)
+[ *st; *if ; *mps -b ]...
+top_tof, Lv=16, A=2797.00, LT=2797, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3087.00, LT=3104, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.2, 32.7) <-bst(d,a)
+[ *logic; *mps; *mfs; *mps -b ]...
+top_tof, Lv=16, A=2866.00, LT=2868, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3087.00, LT=3104, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 32.7) 
+The network has 16 nodes changed by "*mfs".
+top_tof, Lv=16, A=2857.00, LT=2859, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3078.00, LT=3095, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(5.4, 38.2) <-bst(d,a)
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 1 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2858  edge =   9285  0.00%  lev = 16 
+LUT =  2858  1+ =  2856  2+ =  2786   0=2 1=70 2=638 3=653 4=1495 Ave = 3.25  Area = 2856  Delay = 16000
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.8, 40.0) <-bst(d,a)
+<*C>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+
+@@@@@@@@@@    T   r   y       M   o   r   e   @@@@@@@@@@
+[ *mps; *pss; *mload -a ]...
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 40.0) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2858  edge =   9285  0.00%  lev = 16 
+LUT =  2858  1+ =  2856  2+ =  2786   0=2 1=70 2=638 3=653 4=1495 Ave = 3.25  Area = 2856  Delay = 16000
+<*C>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best area mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ *st;     *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2836.00, LT=2836, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3128.00, LT=3145, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 40.9) 
+[          *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2830.00, LT=2830, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3122.00, LT=3139, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.8, 41.7) 
+[ *bidec;  *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2826.00, LT=2826, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3118.00, LT=3135, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.2, 42.9) 
+[ *bidec;  *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2812.00, LT=2812, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3104.00, LT=3121, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.2, 44.1) 
+[ *bidec;  *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2815.00, LT=2815, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3107.00, LT=3124, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.2, 45.3) 
+[ *shrink; *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2792.00, LT=2792, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3084.00, LT=3101, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.0, 46.3) 
+[ *shrink; *dch -f; *if -C 12 ; *mps -b ]...
+top_tof, Lv=16, A=2793.00, LT=2793, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3085.00, LT=3102, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.8, 47.1) 
+[ *mps; *mload ; *mps; *pss ]...
+top_tof, Lv=16, A=2793.00, LT=2793, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3085.00, LT=3102, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+<*C>top_tof, Lv=16, A=2793.00, LT=2793, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< C>top_tof, Lv=16, A=3085.00, LT=3102, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2858  edge =   9285  0.00%  lev = 16 
+LUT =  2858  1+ =  2856  2+ =  2786   0=2 1=70 2=638 3=653 4=1495 Ave = 3.25  Area = 2856  Delay = 16000
+[          *dch -f; *if -e ; *mps -b ]...
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[          *dch -f; *if -e ; *mps -b ]...
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[ *bidec;  *dch -f; *if -e ; *mps -b ]...
+Abc2_CommandBidec(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[ *shrink; *dch -f; *if -e ; *mps -b ]...
+Abc2_CommandShrink(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[ *mps; *mload ; *mps; *pss ]...
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+<*C>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2858  edge =   9285  0.00%  lev = 16 
+LUT =  2858  1+ =  2856  2+ =  2786   0=2 1=70 2=638 3=653 4=1495 Ave = 3.25  Area = 2856  Delay = 16000
+[ *bidec;  *dch -f; *if -C 32; *mps -b ]...
+Abc2_CommandBidec(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[ *bidec;  *dch -f; *if -C 32; *mps -b ]...
+Abc2_CommandBidec(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[ *shrink; *dch -f; *if -C 32; *mps -b ]...
+Abc2_CommandShrink(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.2) 
+[ *shrink; *dch -f; *if -C 32; *mps -b ]...
+Abc2_CommandShrink(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.3) 
+[ *shrink; *dch -f; *if -C 32; *mps -b ]...
+Abc2_CommandShrink(): Root model is already in the logic form.
+Abc2_CommandDch(): Root model is already in the logic form.
+Abc2_CommandIf(): The design should be structurally hashed (run *st).
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.3) 
+[ *mps; *mload ; *mps; *pss ]...
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.3) 
+<*C>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 47.3) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2858  edge =   9285  0.00%  lev = 16 
+LUT =  2858  1+ =  2856  2+ =  2786   0=2 1=70 2=638 3=653 4=1495 Ave = 3.25  Area = 2856  Delay = 16000
+
+@@@@@@@@@@  w w w w @@@@@@@@@@
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network is not changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2858  edge =   9285  0.00%  lev = 16 
+LUT =  2858  1+ =  2856  2+ =  2786   0=2 1=70 2=638 3=653 4=1495 Ave = 3.25  Area = 2856  Delay = 16000
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.8, 49.1) 
+[ *sw -lv; *mps ]...
+top_tof, Lv=16, A=2856.00, LT=2858, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3077.00, LT=3094, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 49.1) 
+[ *st; *if -C 32; *mps -b ]...
+top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.1, 49.2) <-bst(d,a)
+[ *bidec; *dch -f; *if -C 32; *mps -b ]...
+top_tof, Lv=16, A=2822.00, LT=2822, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3113.00, LT=3130, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.0, 50.2) 
+[ *bidec; *dch -f; *if -C 32; *mps -b ]...
+top_tof, Lv=16, A=2831.00, LT=2831, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3122.00, LT=3139, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 51.1) 
+[ *logic; *mps; *mfs; *mps -b ]...
+top_tof, Lv=16, A=2900.00, LT=2902, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3122.00, LT=3139, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 51.1) 
+The network has 46 nodes changed by "*mfs".
+top_tof, Lv=17, A=2883.00, LT=2885, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3105.00, LT=3122, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.9, 55.0) 
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 6 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2883  edge =   8910  0.00%  lev = 17 
+LUT =  2883  1+ =  2881  2+ =  2812   0=2 1=69 2=833 3=741 4=1238 Ave = 3.09  Area = 2881  Delay = 17000
+top_tof, Lv=17, A=2881.00, LT=2883, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3103.00, LT=3120, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(2.1, 57.1) 
+[ *mps; *mload ; *mps; *pss ]...
+top_tof, Lv=17, A=2881.00, LT=2883, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3103.00, LT=3120, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 57.1) 
+<*C>top_tof, Lv=17, A=2881.00, LT=2883, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=17, A=3103.00, LT=3120, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< A>top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< D>top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ C]top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ A]top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ D]top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 57.2) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8243  edge =   9202  0.00%  lev = 16 
+LUT =  2786  1+ =  2786  2+ =  2786   0=0 1=0 2=648 3=646 4=1492 Ave = 3.30  Area = 2786  Delay = 16000
+
+@@@@@@@@@@  x x x x x @@@@@@@@@@
+[ *mps; *logic; *pss; *mps ]...
+top_tof, Lv=16, A=2786.00, LT=2786, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 57.2) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2857  edge =   9271  0.00%  lev = 16 
+LUT =  2857  1+ =  2855  2+ =  2786   0=2 1=69 2=648 3=646 4=1492 Ave = 3.25  Area = 2855  Delay = 16000
+top_tof, Lv=16, A=2855.00, LT=2857, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 57.2) 
+[ *sw -lv; *pss; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2857  edge =   9271  0.00%  lev = 16 
+LUT =  2857  1+ =  2855  2+ =  2786   0=2 1=69 2=648 3=646 4=1492 Ave = 3.25  Area = 2855  Delay = 16000
+top_tof, Lv=16, A=2855.00, LT=2857, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3076.00, LT=3093, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 57.2) 
+[ *mfs -L 3 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 2 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2856  edge =   9268  0.00%  lev = 16 
+LUT =  2856  1+ =  2854  2+ =  2785   0=2 1=69 2=647 3=647 4=1491 Ave = 3.25  Area = 2854  Delay = 16000
+top_tof, Lv=16, A=2854.00, LT=2856, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3075.00, LT=3092, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(2.5, 59.8) <-bst(d,a)
+[ *sw -lv; *pss; *mps ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2856  edge =   9268  0.00%  lev = 16 
+LUT =  2856  1+ =  2854  2+ =  2785   0=2 1=69 2=647 3=647 4=1491 Ave = 3.25  Area = 2854  Delay = 16000
+top_tof, Lv=16, A=2854.00, LT=2856, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3075.00, LT=3092, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 59.8) 
+[ *st; *if -C 32; *pss; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8240  edge =   9195  0.00%  lev = 16 
+LUT =  2781  1+ =  2781  2+ =  2781   0=0 1=0 2=643 3=643 4=1495 Ave = 3.31  Area = 2781  Delay = 16000
+top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.2, 60.0) <-bst(d,a)
+[ *bidec; *dch -f; *if -C 32; *pss; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8002  edge =   8978  0.00%  lev = 16 
+LUT =  2827  1+ =  2827  2+ =  2827   0=0 1=0 2=799 3=732 4=1296 Ave = 3.18  Area = 2827  Delay = 16000
+top_tof, Lv=16, A=2827.00, LT=2827, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3118.00, LT=3135, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.4, 61.4) 
+[ *bidec; *dch -f; *if -C 32; *pss; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   7899  edge =   8949  0.00%  lev = 16 
+LUT =  2838  1+ =  2838  2+ =  2838   0=0 1=0 2=821 3=761 4=1256 Ave = 3.15  Area = 2838  Delay = 16000
+top_tof, Lv=16, A=2838.00, LT=2838, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3129.00, LT=3146, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.3, 62.7) 
+[ *logic; *pss; *mfs; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2909  edge =   9018  0.00%  lev = 16 
+LUT =  2909  1+ =  2907  2+ =  2838   0=2 1=69 2=821 3=761 4=1256 Ave = 3.10  Area = 2907  Delay = 16000
+The network has 28 nodes changed by "*mfs".
+top_tof, Lv=16, A=2894.00, LT=2896, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3116.00, LT=3133, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.7, 66.5) 
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 4 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2894  edge =   8956  0.00%  lev = 16 
+LUT =  2894  1+ =  2892  2+ =  2822   0=2 1=70 2=819 3=764 4=1239 Ave = 3.09  Area = 2892  Delay = 16000
+top_tof, Lv=16, A=2892.00, LT=2894, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3114.00, LT=3131, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.4, 67.9) 
+[ *mps; *mload ; *mps; *pss ]...
+top_tof, Lv=16, A=2892.00, LT=2894, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3114.00, LT=3131, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 67.9) 
+<*C>top_tof, Lv=16, A=2892.00, LT=2894, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=16, A=3114.00, LT=3131, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< A>top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< D>top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ C]top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ A]top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ D]top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2781.00, LT=2781, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 67.9) 
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  and =   8240  edge =   9195  0.00%  lev = 16 
+LUT =  2781  1+ =  2781  2+ =  2781   0=0 1=0 2=643 3=643 4=1495 Ave = 3.31  Area = 2781  Delay = 16000
+
+@@@@@@@@@@  y y y y @@@@@@@@@@
+[ *logic; *pss; *mps ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2852  edge =   9264  0.00%  lev = 16 
+LUT =  2852  1+ =  2850  2+ =  2781   0=2 1=69 2=643 3=643 4=1495 Ave = 3.25  Area = 2850  Delay = 16000
+top_tof, Lv=16, A=2850.00, LT=2852, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 67.9) 
+[ *sw -lv; *mps -b ]...
+top_tof, Lv=16, A=2850.00, LT=2852, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3071.00, LT=3088, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 67.9) 
+[ *mfs -L 3 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 1 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2851  edge =   9262  0.00%  lev = 16 
+LUT =  2851  1+ =  2849  2+ =  2780   0=2 1=69 2=642 3=643 4=1495 Ave = 3.25  Area = 2849  Delay = 16000
+top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.8, 69.8) <-bst(d,a)
+[ *sw -lv; *mps ]...
+top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 69.8) 
+[ *st; *if -C 32; *mps -b ]...
+top_tof, Lv=16, A=2783.00, LT=2783, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3073.00, LT=3090, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.1, 69.9) 
+[ *bidec; *dch -f; *if -C 32; *mps -b ]...
+top_tof, Lv=16, A=2826.00, LT=2826, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3117.00, LT=3134, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.0, 70.9) 
+[ *bidec; *dch -f; *if -C 32; *mps -b ]...
+top_tof, Lv=16, A=2808.00, LT=2808, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3099.00, LT=3116, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.9, 71.8) 
+[ *logic; *mps; *mfs; *mps -b ]...
+top_tof, Lv=16, A=2877.00, LT=2879, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3099.00, LT=3116, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 71.8) 
+The network has 30 nodes changed by "*mfs".
+top_tof, Lv=17, A=2863.00, LT=2865, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3085.00, LT=3102, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.5, 75.3) 
+[ *mfs -L 2 -ae -F 50 -D 200 -M 1000; *pss; *mps -b ]...
+The network has 2 nodes changed by "*mfs".
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2864  edge =   8891  0.00%  lev = 17 
+LUT =  2864  1+ =  2862  2+ =  2792   0=2 1=70 2=798 3=751 4=1243 Ave = 3.10  Area = 2862  Delay = 17000
+top_tof, Lv=17, A=2862.00, LT=2864, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=17, A=3084.00, LT=3101, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(2.1, 77.5) 
+[ *mload -a; *mps; ]...
+<*C>top_tof, Lv=17, A=2862.00, LT=2864, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=17, A=3084.00, LT=3101, MX=4, D=17.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best area mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 77.5) 
+[ *mps; *mload -d; *mps ]...
+top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 77.5) 
+<*C>top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-AREA(temp)ntk loaded...
+[ C]top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ C]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*A]top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ D]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+top_tof, Lv=16, A=2849.00, LT=2851, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 77.5) 
+
+@@@@@@@@@@  E n d   T r y   M o r e @@@@@@@@@@
+
+@@@@@@@@@@  7 a 7 a @@@@@@@@@@
+[ *plut ]...
+# The area/delay of k-variable LUTs:
+# k    area     delay
+1      1.00   1000.00
+2      1.00   1000.00
+3      1.00   1000.00
+4      1.00   1000.00
+5      2.00   2000.00
+6      2.00   2000.00
+7      2.00   2000.00
+[ *st; *if -S 44; *mps ]...
+top_tof, Lv=16, A=2791.00, LT=2363, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3081.00, LT=2670, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(1.6, 79.1) 
+[         *dch -f; *if -S 44; *mps ]...
+top_tof, Lv=16, A=2800.00, LT=2384, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3092.00, LT=2693, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(4.4, 83.5) 
+[         *dch -f; *if -S 44; *mps ]...
+top_tof, Lv=16, A=2812.00, LT=2398, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3104.00, LT=2707, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.5, 87.0) 
+[ *bidec; *dch -f; *if -S 44; *mps ]...
+top_tof, Lv=16, A=2813.00, LT=2402, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=16, A=3105.00, LT=2711, MX=7, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(4.4, 91.4) 
+[ *bidec; *dch -f; *if -S 44; *mps ]...
+top_tof, Lv=15, A=2823.00, LT=2422, MX=7, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=15, A=3115.00, LT=2731, MX=7, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.3, 94.7) 
+[ *bidec; *dch -f; *if -S 44 -z; *mps -b ]...
+top_tof, Lv=15, A=2808.00, LT=2808, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=15, A=3100.00, LT=3117, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.2, 97.8) <-bst(d)
+[ *bidec; *dch -f; *if -S 44 -z; *mps -b ]...
+top_tof, Lv=15, A=2800.00, LT=2800, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=15, A=3092.00, LT=3109, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.0, 100.8) <-bst(d)
+[ *bidec; *dch -f; *if -S 44 -z; *mps -b ]...
+top_tof, Lv=15, A=2793.00, LT=2793, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) ...
+top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(3.2, 104.0) <-bst(d)
+[ *logic; *pss; *mps -b ]...
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   2864  edge =   8997  0.00%  lev = 15 
+LUT =  2864  1+ =  2862  2+ =  2793   0=2 1=69 2=774 3=696 4=1323 Ave = 3.14  Area = 2862  Delay = 15000
+top_tof, Lv=15, A=2862.00, LT=2864, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 104.1) 
+[ *logic ]...
+Abc2_CommandLogic(): Root model is already in the logic form.
+[ *legal -v; *pss; *mps ]...
+Special input stats: 1x = 538  2x = 3  15x = 1   (PI = 183  BoxOut = 5  Const = 15  Buffer = 53)
+Legalization: added 188 PI buffers and duplicated 50 nodes with high fanouts (total = 238).
+top_tof         : pi =  17 po =  24 ff =  1164  box =   38 (  38)  node =   3102  edge =   9248  0.00%  lev = 15 
+LUT =  3102  1+ =  3085  2+ =  2810   0=17 1=275 2=785 3=697 4=1328 Ave = 2.98  Area = 3085  Delay = 15000
+top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 104.1) 
+[ *mps ]...
+top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) ...
+top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) T=(0.0, 104.1) 
+
+@@@@@@@@@@  T h e   F i n a l   Q o R   S u m m a r y @@@@@@@@@@
+top_tof, PI=17, PO=24, A(3623.00, 3085.00, 3070.00), D(22.00, 15.00, 16.00), DL(22.00, 15.00, 16.00), W(11121, 9248, 9508), FF(1164, 1164, 1164), TM=110.00 secs, Mem=105.92 M, 
+
+[RPT0], top_tof_pre_magic.v, MD=DL, A, 3623.00, 3085.00, 3070.00, D, 22.00, 15.00, 16.00, PI=17, PO=24, FF, 1164, 1164, 1164, BX, 1202, 1202, 1202, TIM, 110.0, Mem, 105.9, 
+
+<*C>top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< C>top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< A>top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+< D>top_tof, Lv=15, A=2793.00, LT=2793, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+< D>top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+@INFO: Loading the best delay mode, best-DELAY-ntk loaded...
+[ C]top_tof, Lv=15, A=2793.00, LT=2793, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ C]top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ A]top_tof, Lv=16, A=3070.00, LT=3087, MX=4, D=16.00, DD=16.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[*D]top_tof, Lv=15, A=2793.00, LT=2793, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(1,1,0) 
+[ D]top_tof, Lv=15, A=3085.00, LT=3102, MX=4, D=15.00, DD=15.00, PI=17, PO=24, FF=1164, BX=1202, (st/mp/lg)=(0,0,1) 
+[ *logic -v ]...
+CO drivers: Pos = 1446 (CI = 780).  Neg = 290 (CI = 55).  Both = 15 (CI = 9).
+[ *legal -v ]...
+Special input stats: 1x = 538  2x = 3  15x = 1   (PI = 183  BoxOut = 5  Const = 15  Buffer = 53)
+Legalization: added 188 PI buffers and duplicated 50 nodes with high fanouts (total = 238).
+
+Magic Lut summary:
+
+LUT-0, 		Total number : 17
+LUT-1, 		Total number : 275
+LUT-2, 		Total number : 785
+LUT-3, 		Total number : 697
+LUT-4, 		Total number : 1328
+
+
+Carry block check summary:
+
+All the carry blocks are legal.
+
+Clock Net Summary:
+
+ioc_fun_clk_inst|f_in[0]_net: 1164
+
+Net Fanout Summary:
+
+
+
+Resource clock domain crossing path:
+launch clock                                       capture clock                                      begin point                                        end point                                          pipelined
+
+Command line options : -tcl scripts/cst_option.tcl
+
+design network
+pi num : 15
+po num : 21
+pio num : 1
+comb num : 559
+reg num : 0
+macro num : 3100
+instance num : 4267
+depth : 15.0
+
+mapped network
+pi num : 15
+po num : 21
+pio num : 1
+lut num : 3086
+reg num : 1164
+macro num : 3123
+instance num : 4326
+depth(take delay of carry as 0.1) : 15.0
+depth (take delay of macro as 1) : 28
+
+
+critical path : 
+	Path point u_oled_rd_col_reg[1]/qx
+	Path point ii2740/f3
+	Path point ii2740/dx
+	Path point ii2744/f3
+	Path point ii2744/dx
+	Path point ii2931/f3
+	Path point ii2931/dx
+	Path point ii3270/f2
+	Path point ii3270/dx
+	Path point ii3274/f3
+	Path point ii3274/dx
+	Path point ii3279/f3
+	Path point ii3279/dx
+	Path point ii3280/f0
+	Path point ii3280/dx
+	Path point ii3380/f3
+	Path point ii3380/dx
+	Path point ii3493/f3
+	Path point ii3493/dx
+	Path point ii3496/f3
+	Path point ii3496/dx
+	Path point ii3502/f3
+	Path point ii3502/dx
+	Path point ii3504/f1
+	Path point ii3504/dx
+	Path point ii3521/f3
+	Path point ii3521/dx
+	Path point ii3548/f2
+	Path point ii3548/dx
+	Path point ii3584/f2
+	Path point ii3584/dx
+	Path point u_i2c_oled_pix_byte_r_reg[0]/di
+
+
+
+-----------------------Result summary:-----------------------
+
+
+Primitive summary:
+
+Primitive Name : GND, 		Total number : 1
+Primitive Name : L3_BASIC_IO, 		Total number : 37
+Primitive Name : L3_IOC_FUN, 		Total number : 37
+Primitive Name : L3_REG, 		Total number : 1164
+Primitive Name : LUT4, 		Total number : 2533
+Primitive Name : LUT4C, 		Total number : 553
+Primitive Name : VCC, 		Total number : 1
+
+Lut summary:
+
+LUT-0, 		Total number : 9
+LUT-1, 		Total number : 268
+LUT-2, 		Total number : 783
+LUT-3, 		Total number : 698
+LUT-4, 		Total number : 1328
+
+Wire summary:
+
+Total wire number : 14851
+Average fanout : 3.05
+Average Lut fanout : 2.46
+Average Reg fanout : 3.70
+
+Control signal summary:
+
+Total REG number : 1164.
+
+Total CE control signal number : 61.
+	CE control signal: u_oled_boot_ph_reg[1]|qx_net, fanout: 21.
+	CE control signal: u_parser_crc_err_reg|qx_net, fanout: 16.
+	CE control signal: u_parser_frame_ok_reg|qx_net, fanout: 16.
+	CE control signal: u_tof_rx_rx_valid_reg|qx_net, fanout: 21.
+	CE control signal: ii1207|dx_net, fanout: 16.
+	CE control signal: ii1213|dx_net, fanout: 16.
+	CE control signal: ii1223|dx_net, fanout: 24.
+	CE control signal: ii1280|dx_net, fanout: 17.
+	CE control signal: ii1316|dx_net, fanout: 8.
+	CE control signal: ii1322|dx_net, fanout: 4.
+	CE control signal: ii1537|dx_net, fanout: 24.
+	CE control signal: ii1655|dx_net, fanout: 8.
+	CE control signal: ii1854|dx_net, fanout: 6.
+	CE control signal: ii2029|dx_net, fanout: 24.
+	CE control signal: ii2088|dx_net, fanout: 28.
+	CE control signal: ii2282|dx_net, fanout: 10.
+	CE control signal: ii2312|dx_net, fanout: 16.
+	CE control signal: ii2318|dx_net, fanout: 11.
+	CE control signal: ii2354|dx_net, fanout: 11.
+	CE control signal: ii2476|dx_net, fanout: 20.
+	CE control signal: ii2496|dx_net, fanout: 5.
+	CE control signal: ii2497|dx_net, fanout: 36.
+	CE control signal: ii2540|dx_net, fanout: 22.
+	CE control signal: ii2609|dx_net, fanout: 10.
+	CE control signal: ii2629|dx_net, fanout: 10.
+	CE control signal: ii2703|dx_net, fanout: 8.
+	CE control signal: ii3585|dx_net, fanout: 8.
+	CE control signal: ii3780|dx_net, fanout: 8.
+	CE control signal: ii3781|dx_net, fanout: 4.
+	CE control signal: ii3807|dx_net, fanout: 4.
+	CE control signal: ii3830|dx_net, fanout: 105.
+	CE control signal: ii3906|dx_net, fanout: 8.
+	CE control signal: ii4013|dx_net, fanout: 4.
+	CE control signal: ii4017|dx_net, fanout: 8.
+	CE control signal: ii4022|dx_net, fanout: 6.
+	CE control signal: ii4027|dx_net, fanout: 20.
+	CE control signal: ii4100|dx_net, fanout: 5.
+	CE control signal: ii4107|dx_net, fanout: 9.
+	CE control signal: ii4151|dx_net, fanout: 4.
+	CE control signal: ii4159|dx_net, fanout: 9.
+	CE control signal: ii4189|dx_net, fanout: 9.
+	CE control signal: ii4241|dx_net, fanout: 48.
+	CE control signal: ii4269|dx_net, fanout: 16.
+	CE control signal: ii4292|dx_net, fanout: 8.
+	CE control signal: ii4313|dx_net, fanout: 8.
+	CE control signal: ii4322|dx_net, fanout: 16.
+	CE control signal: ii4324|dx_net, fanout: 16.
+	CE control signal: ii4325|dx_net, fanout: 16.
+	CE control signal: ii4388|dx_net, fanout: 4.
+	CE control signal: ii4397|dx_net, fanout: 8.
+	CE control signal: ii4425|dx_net, fanout: 10.
+	CE control signal: ii4427|dx_net, fanout: 5.
+	CE control signal: ii4548|dx_net, fanout: 11.
+	CE control signal: ii4556|dx_net, fanout: 8.
+	CE control signal: ii4618|dx_net, fanout: 4.
+	CE control signal: ii4627|dx_net, fanout: 8.
+	CE control signal: ii4696|dx_net, fanout: 16.
+	CE control signal: ii4764|dx_net, fanout: 48.
+	CE control signal: ii4767|dx_net, fanout: 6.
+	CE control signal: ii4785|dx_net, fanout: 12.
+	CE control signal: ii4826|dx_net, fanout: 4.
+
+Total SET control signal number : 1.
+	SET control signal: ii1214|dx_net, fanout: 42.
+
+Total RST control signal number : 1.
+	RST control signal: ii1214|dx_net, fanout: 1073.
+
+
+Fuxi fx2025.1 linux64 CST was successful!
+6 warning(s), 0 error(s).
+CPU Time: 116.260 seconds, Peak Memory: 300 MB

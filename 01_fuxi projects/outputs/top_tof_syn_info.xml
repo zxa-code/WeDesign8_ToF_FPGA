@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<designinfo>
+
+  <topmodule>
+    <port direction="output" name="COLOR" pmname="COLOR"/>
+    <port direction="input" name="clk" pmname="clk"/>
+    <port direction="output" name="dbg_tx" pmname="dbg_tx"/>
+    <port direction="output" name="i2c_scl" pmname="i2c_scl"/>
+    <port direction="inout" name="i2c_sda" pmname="i2c_sda"/>
+    <port direction="input" name="key[0]" pmname="key[0]"/>
+    <port direction="input" name="key[1]" pmname="key[1]"/>
+    <port direction="input" name="key[2]" pmname="key[2]"/>
+    <port direction="input" name="key[3]" pmname="key[3]"/>
+    <port direction="input" name="key_a" pmname="key_a"/>
+    <port direction="input" name="key_b" pmname="key_b"/>
+    <port direction="input" name="key_enc" pmname="key_enc"/>
+    <port direction="output" name="led[0]" pmname="led[0]"/>
+    <port direction="output" name="led[1]" pmname="led[1]"/>
+    <port direction="output" name="led[2]" pmname="led[2]"/>
+    <port direction="output" name="led[3]" pmname="led[3]"/>
+    <port direction="output" name="led[4]" pmname="led[4]"/>
+    <port direction="output" name="led[5]" pmname="led[5]"/>
+    <port direction="output" name="led[6]" pmname="led[6]"/>
+    <port direction="output" name="led[7]" pmname="led[7]"/>
+    <port direction="output" name="oled_dc" pmname="oled_dc"/>
+    <port direction="output" name="oled_mosi" pmname="oled_mosi"/>
+    <port direction="output" name="oled_res" pmname="oled_res"/>
+    <port direction="output" name="oled_sclk" pmname="oled_sclk"/>
+    <port direction="input" name="phase_a" pmname="phase_a"/>
+    <port direction="input" name="phase_b" pmname="phase_b"/>
+    <port direction="output" name="seg_dig[0]" pmname="seg_dig[0]"/>
+    <port direction="output" name="seg_dig[1]" pmname="seg_dig[1]"/>
+    <port direction="output" name="seg_din" pmname="seg_din"/>
+    <port direction="output" name="seg_rck" pmname="seg_rck"/>
+    <port direction="output" name="seg_sck" pmname="seg_sck"/>
+    <port direction="input" name="sw[0]" pmname="sw[0]"/>
+    <port direction="input" name="sw[1]" pmname="sw[1]"/>
+    <port direction="input" name="sw[2]" pmname="sw[2]"/>
+    <port direction="input" name="sw[3]" pmname="sw[3]"/>
+    <port direction="input" name="tof1_rx" pmname="tof1_rx"/>
+    <port direction="output" name="tof1_tx" pmname="tof1_tx"/>
+    <inst modulename="alarm_ctrl" name="u_alarm" pmname="alarm_ctrl:u_alarm" type="combination"/>
+    <inst modulename="bcd_conv" name="u_bcd" pmname="bcd_conv:u_bcd" type="combination"/>
+    <inst modulename="disp_chargen" name="u_chargen" pmname="disp_chargen:u_chargen" type="combination"/>
+    <inst modulename="font8x8" name="u_font" pmname="font8x8:u_font" type="combination"/>
+    <inst modulename="ssd1306_128x64" name="u_i2c_oled" pmname="ssd1306_128x64:u_i2c_oled" type="combination">
+      <inst modulename="i2c_master" name="u_i2c" pmname="i2c_master:u_i2c" type="combination"/>
+    </inst>
+    <inst modulename="key_scan" name="u_key_scan" pmname="key_scan:u_key_scan" type="combination"/>
+    <inst modulename="oled_sh1107" name="u_oled" pmname="oled_sh1107:u_oled" type="combination"/>
+    <inst modulename="tof1_parser" name="u_parser" pmname="tof1_parser:u_parser" type="combination">
+      <inst modulename="crc16_modbus" name="u_crc" pmname="crc16_modbus:u_crc" type="combination"/>
+    </inst>
+    <inst modulename="uart_tx" name="u_pc_tx" pmname="uart_tx:u_pc_tx" type="combination"/>
+    <inst modulename="rotary_enc" name="u_rotary_enc" pmname="rotary_enc:u_rotary_enc" type="combination"/>
+    <inst modulename="seg7_595" name="u_seg7" pmname="seg7_595:u_seg7" type="combination"/>
+    <inst modulename="uart_rx" name="u_tof_rx" pmname="uart_rx:u_tof_rx" type="combination"/>
+    <inst modulename="uart_tx" name="u_tof_tx" pmname="uart_tx:u_tof_tx" type="combination"/>
+    <inst modulename="ui_ctrl" name="u_ui" pmname="ui_ctrl:u_ui" type="combination"/>
+    <inst modulename="ws2812_drv" name="u_ws2812" pmname="ws2812_drv:u_ws2812" type="combination"/>
+  </topmodule>
+
+  <modulelist>
+    <module fileloc="alarm_ctrl.v" lineno="27" module_name="alarm_ctrl" name="alarm_ctrl"/>
+    <module fileloc="bcd_conv.v" lineno="10" module_name="bcd_conv" name="bcd_conv"/>
+    <module fileloc="crc16_modbus.v" lineno="10" module_name="crc16_modbus" name="crc16_modbus"/>
+    <module fileloc="disp_chargen.v" lineno="16" module_name="disp_chargen" name="disp_chargen"/>
+    <module fileloc="font8x8.v" lineno="16" module_name="font8x8" name="font8x8"/>
+    <module fileloc="iic_master.v" lineno="12" module_name="i2c_master" name="i2c_master"/>
+    <module fileloc="key_scan.v" lineno="12" module_name="key_scan" name="key_scan"/>
+    <module fileloc="oled_sh1107.v" lineno="39" module_name="oled_sh1107" name="oled_sh1107"/>
+    <module fileloc="rotary_enc.v" lineno="11" module_name="rotary_enc" name="rotary_enc"/>
+    <module fileloc="seg7_595.v" lineno="18" module_name="seg7_595" name="seg7_595"/>
+    <module fileloc="oled_ssd1306.v" lineno="15" module_name="ssd1306_128x64" name="ssd1306_128x64"/>
+    <module fileloc="tof1_parser.v" lineno="12" module_name="tof1_parser" name="tof1_parser"/>
+    <module fileloc="top_tof.v" isTop="top" lineno="53" module_name="top_tof" name="top_tof"/>
+    <module fileloc="uart_rx.v" lineno="12" module_name="uart_rx" name="uart_rx"/>
+    <module fileloc="uart_tx.v" lineno="11" module_name="uart_tx" name="uart_tx"/>
+    <module fileloc="ui_ctrl.v" lineno="19" module_name="ui_ctrl" name="ui_ctrl"/>
+    <module fileloc="ws2812_drv.v" lineno="14" module_name="ws2812_drv" name="ws2812_drv"/>
+  </modulelist>
+
+</designinfo>

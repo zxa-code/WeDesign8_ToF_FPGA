@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aoc version="2.3" device="HR03PN0U81C7">
+	<ioConstraint>
+		<IO signal_name="key_0_" pad_name="io_12n_0" location="IO_12N_0" pin_no="38" inst_name="io_key_0__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="key_1_" pad_name="io_11n_0" location="IO_11N_0" pin_no="37" inst_name="io_key_1__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="key_2_" pad_name="io_11p_0" location="IO_11P_0" pin_no="28" inst_name="io_key_2__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="key_3_" pad_name="io_12p_0" location="IO_12P_0" pin_no="29" inst_name="io_key_3__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="led_0_" pad_name="io_09p_cks0_0" location="IO_09P_CLK_0" pin_no="48" inst_name="io_led_0__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_1_" pad_name="io_08p_ckn0_0" location="IO_08P_CLK_0" pin_no="39" inst_name="io_led_1__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_2_" pad_name="io_00n_0" location="IO_00N_0" pin_no="30" inst_name="io_led_2__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_3_" pad_name="io_00p_0" location="IO_00P_0" pin_no="21" inst_name="io_led_3__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_4_" pad_name="io25_4" location="IO25_4" pin_no="22" inst_name="io_led_4__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_5_" pad_name="io_08n_0" location="IO_08N_0" pin_no="40" inst_name="io_led_5__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_6_" pad_name="io15_1" location="IO15_1" pin_no="58" inst_name="io_led_6__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="led_7_" pad_name="io11_cks1_1" location="IO11_CLK_1" pin_no="67" inst_name="io_led_7__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="clk" pad_name="io20_ckn1_4" location="IO20_CLK_4" pin_no="32" inst_name="io_clk_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="sw_0_" pad_name="io18_tck_clk_3" location="IO18_TCK_CLK_3" pin_no="33" inst_name="io_sw_0__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="sw_1_" pad_name="io20_tms_3" location="IO20_TMS_3" pin_no="34" inst_name="io_sw_1__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="sw_2_" pad_name="io21_tdi_3" location="IO21_TDI_3" pin_no="35" inst_name="io_sw_2__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="sw_3_" pad_name="io22_tdo_3" location="IO22_TDO_3" pin_no="44" inst_name="io_sw_3__inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="seg_dig_0_" pad_name="io29_3" location="IO29_3" pin_no="25" inst_name="io_seg_dig_0__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="seg_dig_1_" pad_name="io17_clk_3" location="IO17_CLK_3" pin_no="43" inst_name="io_seg_dig_1__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="seg_sck" pad_name="io17_4" location="IO17_4" pin_no="13" inst_name="io_seg_sck_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="seg_rck" pad_name="io04_4" location="IO04_4" pin_no="14" inst_name="io_seg_rck_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="seg_din" pad_name="io03_4" location="IO03_4" pin_no="15" inst_name="io_seg_din_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="oled_dc" pad_name="io10_3" location="IO10_3" pin_no="36" inst_name="io_oled_dc_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="oled_res" pad_name="io24_3" location="IO24_3" pin_no="27" inst_name="io_oled_res_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="oled_mosi" pad_name="io25_3" location="IO25_3" pin_no="18" inst_name="io_oled_mosi_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="oled_sclk" pad_name="io01_4" location="IO01_4" pin_no="17" inst_name="io_oled_sclk_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="key_b" pad_name="io19_4" location="IO19_4" pin_no="12" inst_name="io_key_b_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="phase_a" pad_name="io_05n_0" location="IO_05N_0" pin_no="11" inst_name="io_phase_a_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="phase_b" pad_name="io_10p_0" location="IO_10P_0" pin_no="10" inst_name="io_phase_b_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="key_a" pad_name="io_05p_0" location="IO_05P_0" pin_no="20" inst_name="io_key_a_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="key_enc" pad_name="io_10n_0" location="IO_10N_0" pin_no="19" inst_name="io_key_enc_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="COLOR" pad_name="io_13p_0" location="IO_13P_0" pin_no="46" inst_name="io_COLOR_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="dbg_tx" pad_name="io_13n_0" location="IO_13N_0" pin_no="55" inst_name="io_dbg_tx_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="tof1_tx" pad_name="io13_1" location="IO13_1" pin_no="79" inst_name="io_tof1_tx_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="tof1_rx" pad_name="io05_3" location="IO05_3" pin_no="81" inst_name="io_tof1_rx_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="i2c_scl" pad_name="io22_1" location="IO22_1" pin_no="68" inst_name="io_i2c_scl_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="i2c_sda" pad_name="io06_3" location="IO06_3" pin_no="72" inst_name="io_i2c_sda_inst" direction="inout" operation_mode="normal"/>
+	</ioConstraint>
+</aoc>
